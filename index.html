@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AZURIA, hôtel cinq étoiles en bord de Méditerranée. Découvrez nos suites, notre restaurant et nos expériences exclusives.">
+    <title>AZURIA — Hôtel & Spa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Barre de navigation -->
+    <header class="header" id="top">
+        <a href="#top" class="logo" aria-label="AZURIA, accueil">
+            AZURIA<span class="logo-point">.</span>
+            <small>HÔTEL & SPA</small>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navigation" id="navigation">
+            <a href="#hotel">L'hôtel</a>
+            <a href="#chambres">Nos chambres</a>
+            <a href="#experiences">Expériences</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#contact">Contact</a>
+            <a href="#reservation" class="nav-reservation">Réserver</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Section d'accueil -->
+        <section class="hero">
+            <div class="hero-image"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content reveal">
+                <p class="eyebrow light">HÔTEL CINQ ÉTOILES · CÔTE MÉDITERRANÉENNE</p>
+
+                <h1>Le luxe de<br><em>prendre le temps.</em></h1>
+
+                <p class="hero-description">
+                    Une adresse confidentielle entre mer turquoise,
+                    jardins parfumés et art de vivre méditerranéen.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#chambres" class="button button-light">
+                        Découvrir l'hôtel <span>↗</span>
+                    </a>
+                    <a href="#reservation" class="text-link light-link">
+                        Préparer mon séjour
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-bottom">
+                <span>43° 32' N — 7° 02' E</span>
+                <span>RIVIERA MÉDITERRANÉENNE</span>
+            </div>
+
+            <a href="#hotel" class="scroll-indicator" aria-label="Défiler vers le bas">
+                <span></span>
+            </a>
+        </section>
+
+        <!-- Présentation -->
+        <section class="intro section-padding" id="hotel">
+            <div class="intro-left reveal">
+                <p class="eyebrow">BIENVENUE CHEZ AZURIA</p>
+                <h2>Un lieu à part.<br><em>Une sensation rare.</em></h2>
+            </div>
+
+            <div class="intro-right reveal">
+                <p class="intro-text">
+                    Face aux eaux lumineuses de la Méditerranée, AZURIA
+                    invite à ralentir, à respirer et à redécouvrir le
+                    plaisir des choses simples.
+                </p>
+
+                <p class="muted">
+                    Architecture minérale, matières naturelles, cuisine
+                    inspirée du soleil et hospitalité attentive :
+                    chaque détail a été imaginé pour rendre votre séjour unique.
+                </p>
+
+                <a href="#experiences" class="text-link dark-link">
+                    Notre philosophie <span>↗</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Bandeau de statistiques -->
+        <section class="stats">
+            <div class="stat">
+                <strong>42</strong>
+                <span>Suites & chambres</span>
+            </div>
+            <div class="stat">
+                <strong>01</strong>
+                <span>Restaurant signature</span>
+            </div>
+            <div class="stat">
+                <strong>365</strong>
+                <span>Jours d'évasion</span>
+            </div>
+            <div class="stat">
+                <strong>5<span class="star">★</span></strong>
+                <span>Esprit cinq étoiles</span>
+            </div>
+        </section>
+
+        <!-- Chambres -->
+        <section class="rooms section-padding" id="chambres">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow">VOTRE REFUGE</p>
+                    <h2>Des nuits <em>inoubliables.</em></h2>
+                </div>
+
+                <p class="section-description">
+                    Des espaces lumineux, des matières douces
+                    et la Méditerranée comme horizon.
+                </p>
+            </div>
+
+            <div class="room-grid">
+
+                <article class="room-card reveal">
+                    <a href="#reservation" class="room-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=85"
+                            alt="Chambre élégante avec grand lit et décoration naturelle"
+                            loading="lazy">
+                        <span class="room-number">01 / 03</span>
+                    </a>
+
+                    <div class="room-info">
+                        <div>
+                            <p class="room-category">ÉLÉGANCE & SÉRÉNITÉ</p>
+                            <h3>Chambre Azur</h3>
+                        </div>
+                        <span class="room-price">À partir de 280 € <small>/ nuit</small></span>
+                    </div>
+
+                    <p class="room-description">
+                        Un cocon raffiné aux tons naturels, idéal pour une escapade à deux.
+                    </p>
+
+                    <a href="#reservation" class="text-link dark-link">
+                        Découvrir <span>↗</span>
+                    </a>
+                </article>
+
+                <article class="room-card reveal">
+                    <a href="#reservation" class="room-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+                            alt="Suite spacieuse avec salon contemporain"
+                            loading="lazy">
+                        <span class="room-number">02 / 03</span>
+                    </a>
+
+                    <div class="room-info">
+                        <div>
+                            <p class="room-category">ESPACE & LUMIÈRE</p>
+                            <h3>Suite Horizon</h3>
+                        </div>
+                        <span class="room-price">À partir de 460 € <small>/ nuit</small></span>
+                    </div>
+
+                    <p class="room-description">
+                        Un salon indépendant et une atmosphère pensée pour se ressourcer.
+                    </p>
+
+                    <a href="#reservation" class="text-link dark-link">
+                        Découvrir <span>↗</span>
+                    </a>
+                </article>
+
+                <article class="room-card reveal">
+                    <a href="#reservation" class="room-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=85"
+                            alt="Villa de luxe entourée de végétation"
+                            loading="lazy">
+                        <span class="room-number">03 / 03</span>
+                    </a>
+
+                    <div class="room-info">
+                        <div>
+                            <p class="room-category">L'EXPÉRIENCE ULTIME</p>
+                            <h3>Villa Azuria</h3>
+                        </div>
+                        <span class="room-price">À partir de 890 € <small>/ nuit</small></span>
+                    </div>
+
+                    <p class="room-description">
+                        Un havre privé avec terrasse et piscine pour un séjour d'exception.
+                    </p>
+
+                    <a href="#reservation" class="text-link dark-link">
+                        Découvrir <span>↗</span>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Grande image et expérience -->
+        <section class="experience" id="experiences">
+            <div class="experience-image">
+                <img
+                    src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=2000&q=90"
+                    alt="Piscine extérieure d'un hôtel entourée de palmiers"
+                    loading="lazy">
+            </div>
+
+            <div class="experience-content reveal">
+                <p class="eyebrow light">L'ART DE VIVRE AZURIA</p>
+                <h2>Bien plus qu'un séjour.<br><em>Un art de vivre.</em></h2>
+
+                <p>
+                    Du premier café sur la terrasse au dernier rayon
+                    de soleil, chaque instant devient une expérience.
+                </p>
+
+                <a href="#services" class="button button-light">
+                    Nos expériences <span>↗</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services section-padding" id="services">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow">L'EXPÉRIENCE COMPLÈTE</p>
+                    <h2>Le plaisir des <em>détails.</em></h2>
+                </div>
+
+                <p class="section-description">
+                    Des instants soigneusement imaginés pour
+                    faire de chaque journée un souvenir.
+                </p>
+            </div>
+
+            <div class="service-grid">
+                <article class="service-card reveal">
+                    <span class="service-icon">✳</span>
+                    <p class="service-index">01 — BIEN-ÊTRE</p>
+                    <h3><a href="Spa.html">Le Spa<a/></h3>
+                    <p>
+                        Un espace apaisant, des soins inspirés de la nature
+                        et un rituel pour ralentir.
+                    </p>
+                </article>
+
+                <article class="service-card reveal" 
+                    <span class="service-icon">◌</span>
+                    <p class="service-index">02 — GASTRONOMIE</p>
+                    <h3><a href="Restaurant.html">La Table <a/></h3>
+                    <p>
+                        Une cuisine de saison, des produits locaux
+                        et une carte qui célèbre le soleil.
+                    </p>
+                </article>
+
+                <article class="service-card reveal">
+                    <span class="service-icon">⌁</span>
+                    <p class="service-index">03 — ÉVASION</p>
+                    <h3><a href="Mer.html">La Mer<a/></h3>
+                    <p>
+                        Excursions privées, criques confidentielles
+                        et découvertes du littoral.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Galerie -->
+        <section class="gallery section-padding" id="galerie">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow">INSPIRATION MÉDITERRANÉENNE</p>
+                    <h2>Un avant-goût <em>d'ailleurs.</em></h2>
+                </div>
+
+                <p class="section-description">
+                    Lumières douces, horizons bleus et instants suspendus.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <a href="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1800&q=90"
+                   class="gallery-item gallery-large reveal"
+                   target="_blank" rel="noopener">
+                    <img
+                        src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1200&q=85"
+                        alt="Village méditerranéen aux maisons colorées"
+                        loading="lazy">
+                    <span>Les couleurs du Sud ↗</span>
+                </a>
+
+                <a href="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1800&q=90"
+                   class="gallery-item reveal"
+                   target="_blank" rel="noopener">
+                    <img
+                        src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1000&q=85"
+                        alt="Vagues et eau turquoise"
+                        loading="lazy">
+                    <span>La mer, tout simplement ↗</span>
+                </a>
+
+                <a href="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=90"
+                   class="gallery-item reveal"
+                   target="_blank" rel="noopener">
+                    <img
+                        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85"
+                        alt="Restaurant élégant avec tables dressées"
+                        loading="lazy">
+                    <span>Le goût des belles choses ↗</span>
+                </a>
+
+                <a href="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1800&q=90"
+                   class="gallery-item reveal"
+                   target="_blank" rel="noopener">
+                    <img
+                        src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1000&q=85"
+                        alt="Terrasse accueillante pour un séjour au calme"
+                        loading="lazy">
+                    <span>Les heures paisibles ↗</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Citation -->
+        <section class="quote-section">
+            <p class="eyebrow">L'ESPRIT AZURIA</p>
+            <blockquote>
+                « Le vrai luxe, c'est de pouvoir<br>
+                <em>ne rien avoir à faire.</em> »
+            </blockquote>
+            <span class="quote-line"></span>
+            <p class="quote-caption">PRENDRE LE TEMPS, NOTRE PLUS BELLE PROMESSE</p>
+        </section>
+
+        <!-- Réservation -->
+        <section class="reservation section-padding" id="reservation">
+            <div class="reservation-intro reveal">
+                <p class="eyebrow">VOTRE PROCHAINE ÉVASION</p>
+                <h2>Le début de quelque chose <em>de beau.</em></h2>
+                <p>
+                    Quelques informations suffisent pour imaginer
+                    votre prochain séjour chez AZURIA.
+                </p>
+
+                <div class="reservation-note">
+                    <span>✳</span>
+                    <p>
+                        <strong>Une attention particulière</strong><br>
+                        Chaque séjour est pensé autour de vos envies.
+                    </p>
+                </div>
+            </div>
+
+            <form class="booking-form reveal" id="bookingForm">
+                <div class="form-heading">
+                    <span>AZURIA · RÉSERVATION</span>
+                    <span class="form-stars">★★★★★</span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="arrival">Arrivée</label>
+                        <input type="date" id="arrival" name="arrival" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="departure">Départ</label>
+                        <input type="date" id="departure" name="departure" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guests">Voyageurs</label>
+                        <select id="guests" name="guests" required>
+                            <option value="1">1 voyageur</option>
+                            <option value="2" selected>2 voyageurs</option>
+                            <option value="3">3 voyageurs</option>
+                            <option value="4">4 voyageurs</option>
+                            <option value="5">5 voyageurs</option>
+                            <option value="6">6 voyageurs</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="roomType">Hébergement</label>
+                        <select id="roomType" name="roomType" required>
+                            <option value="Chambre Azur">Chambre Azur</option>
+                            <option value="Suite Horizon">Suite Horizon</option>
+                            <option value="Villa Azuria">Villa Azuria</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Votre adresse e-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="vous@exemple.fr"
+                        required>
+                </div>
+
+                <button type="submit" class="button button-dark booking-button">
+                    Simuler ma réservation <span>↗</span>
+                </button>
+
+                <p class="form-disclaimer">
+                    Démonstration fictive : aucune réservation réelle ne sera effectuée.
+                </p>
+
+                <div class="booking-result" id="bookingResult" role="status" aria-live="polite"></div>
+            </form>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div>
+                <p class="eyebrow light">LES CARNETS AZURIA</p>
+                <h2>Un peu de soleil dans votre boîte mail.</h2>
+                <p>Inspirations, nouvelles de la maison et idées d'évasion.</p>
+            </div>
+
+            <form id="newsletterForm" class="newsletter-form">
+                <label class="sr-only" for="newsletterEmail">Votre adresse e-mail</label>
+                <input
+                    type="email"
+                    id="newsletterEmail"
+                    placeholder="Votre adresse e-mail"
+                    required>
+                <button type="submit" aria-label="S'inscrire à la newsletter">↗</button>
+                <p id="newsletterResult" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer" id="contact">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a href="#top" class="logo footer-logo">
+                    AZURIA<span class="logo-point">.</span>
+                    <small>HÔTEL & SPA</small>
+                </a>
+
+                <p>
+                    Une parenthèse méditerranéenne<br>
+                    imaginée pour se retrouver.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4>EXPLORER</h4>
+                <a href="#hotel">L'hôtel</a>
+                <a href="#chambres">Les chambres</a>
+                <a href="#experiences">Les expériences</a>
+                <a href="#galerie">La galerie</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>INFORMATIONS</h4>
+                <a href="#reservation">Réservation</a>
+                <a href="mailto:bonjour@azuria.example">Nous contacter</a>
+                <a href="#contact">Accès & localisation</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>NOUS SUIVRE</h4>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a>
+                <a href="https://www.pinterest.com/" target="_blank" rel="noopener">Pinterest ↗</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© <span id="currentYear"></span> AZURIA — Projet fictif de démonstration</span>
+            <a href="#top">Retour en haut ↑</a>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+
+    <!-- JavaScript intégré : aucun fichier JS supplémentaire -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const header = document.querySelector(".header");
+            const menuToggle = document.getElementById("menuToggle");
+            const navigation = document.getElementById("navigation");
+            const backToTop = document.getElementById("backToTop");
+
+            // Année automatique dans le pied de page
+            document.getElementById("currentYear").textContent =
+                new Date().getFullYear();
+
+            // Menu mobile
+            menuToggle.addEventListener("click", function () {
+                const isOpen = navigation.classList.toggle("navigation-open");
+
+                menuToggle.classList.toggle("menu-open", isOpen);
+                menuToggle.setAttribute("aria-expanded", String(isOpen));
+                menuToggle.setAttribute(
+                    "aria-label",
+                    isOpen ? "Fermer le menu" : "Ouvrir le menu"
+                );
+            });
+
+            // Fermer le menu après un clic sur un lien
+            navigation.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navigation.classList.remove("navigation-open");
+                    menuToggle.classList.remove("menu-open");
+                    menuToggle.setAttribute("aria-expanded", "false");
+                    menuToggle.setAttribute("aria-label", "Ouvrir le menu");
+                });
+            });
+
+            // Barre de navigation et bouton retour en haut
+            function handleScroll() {
+                const scrolled = window.scrollY > 40;
+
+                header.classList.toggle("header-scrolled", scrolled);
+                backToTop.classList.toggle("back-to-top-visible", window.scrollY > 500);
+            }
+
+            window.addEventListener("scroll", handleScroll, { passive: true });
+            handleScroll();
+
+            backToTop.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+
+            // Apparition progressive des éléments pendant le défilement
+            const revealElements = document.querySelectorAll(".reveal");
+
+            if ("IntersectionObserver" in window) {
+                const revealObserver = new IntersectionObserver(
+                    function (entries, observer) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add("revealed");
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    },
+                    { threshold: 0.12 }
+                );
+
+                revealElements.forEach(function (element) {
+                    revealObserver.observe(element);
+                });
+            } else {
+                revealElements.forEach(function (element) {
+                    element.classList.add("revealed");
+                });
+            }
+
+            // Préparer les dates de réservation
+            const arrivalInput = document.getElementById("arrival");
+            const departureInput = document.getElementById("departure");
+
+            function toLocalDateString(date) {
+                const year = date.getFullYear();
+                const month = String(date.getMonth() + 1).padStart(2, "0");
+                const day = String(date.getDate()).padStart(2, "0");
+                return year + "-" + month + "-" + day;
+            }
+
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            const tomorrow = new Date(today);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+
+            arrivalInput.min = toLocalDateString(today);
+            departureInput.min = toLocalDateString(tomorrow);
+
+            arrivalInput.addEventListener("change", function () {
+                if (!arrivalInput.value) return;
+
+                const arrivalDate = new Date(arrivalInput.value + "T12:00:00");
+                const earliestDeparture = new Date(arrivalDate);
+                earliestDeparture.setDate(earliestDeparture.getDate() + 1);
+
+                departureInput.min = toLocalDateString(earliestDeparture);
+
+                if (
+                    departureInput.value &&
+                    departureInput.value <= arrivalInput.value
+                ) {
+                    departureInput.value = "";
+                }
+            });
+
+            // Simulation de réservation : aucune donnée n'est envoyée
+            const bookingForm = document.getElementById("bookingForm");
+            const bookingResult = document.getElementById("bookingResult");
+
+            bookingForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                if (!bookingForm.reportValidity()) return;
+
+                const arrival = arrivalInput.value;
+                const departure = departureInput.value;
+
+                if (departure <= arrival) {
+                    bookingResult.className = "booking-result booking-error";
+                    bookingResult.textContent =
+                        "La date de départ doit être postérieure à la date d'arrivée.";
+                    return;
+                }
+
+                const guests = document.getElementById("guests").value;
+                const roomType = document.getElementById("roomType").value;
+
+                function formatDate(dateString) {
+                    return new Date(dateString + "T12:00:00").toLocaleDateString(
+                        "fr-FR",
+                        { day: "numeric", month: "long", year: "numeric" }
+                    );
+                }
+
+                bookingResult.className = "booking-result booking-success";
+                bookingResult.innerHTML = "";
+
+                const title = document.createElement("strong");
+                title.textContent = "Votre demande de démonstration est prête !";
+
+                const details = document.createElement("p");
+                details.textContent =
+                    roomType + " · " + guests + " voyageur(s) · du " +
+                    formatDate(arrival) + " au " + formatDate(departure) + ".";
+
+                const note = document.createElement("small");
+                note.textContent =
+                    "Ceci est une simulation : aucune réservation n'a été enregistrée et aucun e-mail n'a été envoyé.";
+
+                bookingResult.append(title, details, note);
+            });
+
+            // Newsletter fictive
+            const newsletterForm = document.getElementById("newsletterForm");
+            const newsletterResult = document.getElementById("newsletterResult");
+
+            newsletterForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                if (!newsletterForm.reportValidity()) return;
+
+                newsletterResult.textContent =
+                    "Merci ! Cette inscription est une démonstration fictive.";
+                newsletterResult.classList.add("newsletter-result-visible");
+
+                newsletterForm.reset();
+            });
+        });
+    </script>
+
+</body>
+</html>

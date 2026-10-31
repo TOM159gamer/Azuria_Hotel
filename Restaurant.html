@@ -1,0 +1,641 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102c35">
+  <meta name="description" content="Découvrez L'AZUR, le restaurant gastronomique de l'hôtel AZURIA. Une cuisine méditerranéenne raffinée face à la mer.">
+  <title>L'AZUR — Restaurant gastronomique | AZURIA</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="restaurant-page">
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <a href="index.html" class="logo">
+      <span class="logo-name">AZURIA</span>
+      <span class="logo-subtitle">HÔTEL & SPA</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Ouvrir le menu" aria-expanded="false"
+      aria-controls="mainNav">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="mainNav">
+      <a href="index.html">L'hôtel</a>
+      <a href="index.html#chambres">Les chambres</a>
+      <a href="restaurant.html" class="active">Restaurant</a>
+      <a href="destination.html">Destination</a>
+      <a href="index.html#reservation" class="nav-cta">Réserver un séjour</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="restaurant-hero">
+      <div class="restaurant-hero-overlay"></div>
+
+      <div class="restaurant-hero-content">
+        <p class="eyebrow">LA TABLE D'AZURIA</p>
+        <h1>L'AZUR</h1>
+        <p class="hero-subtitle">
+          Une cuisine inspirée par la Méditerranée.
+        </p>
+        <a href="#menu" class="button button-gold">
+          Découvrir notre carte
+        </a>
+      </div>
+
+      <div class="hero-bottom-note">
+        <span>CUISINE MÉDITERRANÉENNE</span>
+        <span>·</span>
+        <span>PRODUITS DE SAISON</span>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="restaurant-intro section-padding">
+      <div class="restaurant-intro-image">
+        <img
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1100&q=85"
+          alt="Table élégamment dressée dans un restaurant gastronomique"
+          loading="lazy">
+      </div>
+
+      <div class="restaurant-intro-text">
+        <p class="eyebrow">L'ART DE RECEVOIR</p>
+        <h2>Le goût des<br><em>instants précieux.</em></h2>
+        <div class="gold-line"></div>
+        <p>
+          Face aux eaux scintillantes de la Méditerranée, L'AZUR
+          célèbre une cuisine généreuse, élégante et inspirée par
+          les richesses du littoral.
+        </p>
+        <p>
+          Les produits de saison rencontrent les saveurs du Sud,
+          dans une cuisine qui privilégie la fraîcheur, la simplicité
+          et le plaisir du partage.
+        </p>
+        <p class="signature">La Maison AZURIA</p>
+      </div>
+    </section>
+
+    <!-- La philosophie -->
+    <section class="restaurant-philosophy">
+      <div class="philosophy-content">
+        <p class="eyebrow">NOTRE PHILOSOPHIE</p>
+        <h2>La Méditerranée<br>dans chaque assiette.</h2>
+        <p>
+          L'huile d'olive, les herbes fraîches, les agrumes et
+          les produits de la mer composent une carte imaginée
+          au rythme des saisons.
+        </p>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="restaurant-menu section-padding" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">NOTRE CARTE</p>
+        <h2>Une invitation<br><em>à la découverte.</em></h2>
+        <p>Carte fictive de démonstration · Prix en euros</p>
+      </div>
+
+      <div class="menu-tabs" role="group" aria-label="Catégories du menu">
+        <button class="menu-tab active" data-category="entrees"
+          aria-pressed="true">Entrées</button>
+        <button class="menu-tab" data-category="plats"
+          aria-pressed="false">Plats</button>
+        <button class="menu-tab" data-category="desserts"
+          aria-pressed="false">Desserts</button>
+        <button class="menu-tab" data-category="boissons"
+          aria-pressed="false">Boissons</button>
+      </div>
+
+      <div class="menu-list" id="menuList" aria-live="polite"></div>
+
+      <p class="menu-note">
+        Les plats et tarifs présentés sont fictifs et servent
+        uniquement à la démonstration du site.
+      </p>
+    </section>
+
+    <!-- Chef -->
+    <section class="chef-section">
+      <div class="chef-image">
+        <img
+          src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=85"
+          alt="Chef en cuisine préparant un plat"
+          loading="lazy">
+      </div>
+
+      <div class="chef-content">
+        <p class="eyebrow">L'ESPRIT DE LA MAISON</p>
+        <h2>Une cuisine sincère,<br><em>un savoir-faire vivant.</em></h2>
+        <div class="gold-line"></div>
+        <p>
+          Notre chef imaginaire compose une carte qui met à l'honneur
+          les produits méditerranéens et les associations délicates.
+          Chaque assiette est pensée comme une rencontre entre
+          tradition du Sud et créativité contemporaine.
+        </p>
+        <a href="#menu" class="text-link">Explorer la carte <span>↗</span></a>
+      </div>
+    </section>
+
+    <!-- Réservation -->
+    <section class="restaurant-booking section-padding" id="reservation-table">
+      <div class="booking-inner">
+        <p class="eyebrow">VOTRE TABLE VOUS ATTEND</p>
+        <h2>Prolongez<br><em>l'expérience AZUR.</em></h2>
+        <p class="booking-description">
+          Choisissez votre moment et préparez votre prochaine
+          expérience gastronomique.
+        </p>
+
+        <form id="tableBookingForm" class="table-booking-form">
+          <div class="form-field">
+            <label for="bookingDate">Date</label>
+            <input type="date" id="bookingDate" required>
+          </div>
+
+          <div class="form-field">
+            <label for="bookingTime">Service</label>
+            <select id="bookingTime" required>
+              <option value="">Choisir un horaire</option>
+              <option value="12:00">12 h 00</option>
+              <option value="12:30">12 h 30</option>
+              <option value="13:00">13 h 00</option>
+              <option value="19:00">19 h 00</option>
+              <option value="19:30">19 h 30</option>
+              <option value="20:00">20 h 00</option>
+              <option value="20:30">20 h 30</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="bookingGuests">Nombre de convives</label>
+            <select id="bookingGuests" required>
+              <option value="1">1 personne</option>
+              <option value="2" selected>2 personnes</option>
+              <option value="3">3 personnes</option>
+              <option value="4">4 personnes</option>
+              <option value="5">5 personnes</option>
+              <option value="6">6 personnes</option>
+            </select>
+          </div>
+
+          <button type="submit" class="button button-gold">
+            Préparer ma réservation
+          </button>
+        </form>
+
+        <div id="bookingMessage" class="booking-message"
+          role="status" aria-live="polite" hidden></div>
+
+        <p class="demo-notice">
+          Démonstration uniquement : aucune table n'est réellement réservée.
+        </p>
+      </div>
+    </section>
+
+    <!-- Informations pratiques -->
+    <section class="restaurant-info section-padding">
+      <div class="section-heading">
+        <p class="eyebrow">INFORMATIONS PRATIQUES</p>
+        <h2>Nous vous accueillons.</h2>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <span class="info-number">01</span>
+          <h3>Déjeuner</h3>
+          <p>12 h 00 – 14 h 00</p>
+          <p>Du mardi au dimanche</p>
+        </article>
+
+        <article class="info-card">
+          <span class="info-number">02</span>
+          <h3>Dîner</h3>
+          <p>19 h 00 – 21 h 30</p>
+          <p>Du mardi au dimanche</p>
+        </article>
+
+        <article class="info-card">
+          <span class="info-number">03</span>
+          <h3>Tenue</h3>
+          <p>Élégante et décontractée</p>
+          <p>Une ambiance raffinée</p>
+        </article>
+      </div>
+      <p class="menu-note">
+        Horaires et informations fictifs pour le projet AZURIA.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div>
+        <a href="index.html" class="logo footer-logo">
+          <span class="logo-name">AZURIA</span>
+          <span class="logo-subtitle">HÔTEL & SPA</span>
+        </a>
+        <p class="footer-description">
+          Une parenthèse méditerranéenne, entre élégance et sérénité.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Découvrir</h3>
+        <a href="index.html">L'hôtel</a>
+        <a href="restaurant.html">Restaurant</a>
+        <a href="destination.html">Destination</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>La Maison</h3>
+        <a href="index.html#chambres">Nos chambres</a>
+        <a href="#reservation-table">Réserver une table</a>
+        <a href="index.html#reservation">Réserver un séjour</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="currentYear"></span> AZURIA — Projet fictif</span>
+      <a href="#header">Retour en haut ↑</a>
+    </div>
+  </footer>
+
+  <!-- Concierge virtuel -->
+  <button class="concierge-launcher" id="conciergeLauncher"
+    aria-label="Ouvrir le concierge AZURIA" aria-expanded="false"
+    aria-controls="conciergePanel">
+    <span aria-hidden="true">✦</span>
+    <span>Concierge</span>
+  </button>
+
+  <section class="concierge-panel" id="conciergePanel"
+    aria-label="Concierge virtuel" hidden>
+    <div class="concierge-header">
+      <div>
+        <p class="concierge-kicker">AZURIA · SERVICE CLIENT</p>
+        <h2>Le concierge</h2>
+      </div>
+      <button type="button" id="conciergeClose"
+        aria-label="Fermer le concierge">×</button>
+    </div>
+
+    <div class="concierge-messages" id="conciergeMessages"
+      aria-live="polite">
+      <p class="concierge-bubble bot">
+        Bonjour et bienvenue chez AZURIA. Comment puis-je vous aider ?
+      </p>
+    </div>
+
+    <div class="concierge-questions">
+      <button type="button" data-question="Quels sont les horaires ?">
+        Horaires
+      </button>
+      <button type="button" data-question="Quels sont les tarifs ?">
+        Tarifs
+      </button>
+      <button type="button" data-question="Comment réserver une table ?">
+        Réserver une table
+      </button>
+      <button type="button" data-question="Où se trouve le restaurant ?">
+        Localisation
+      </button>
+    </div>
+
+    <form id="conciergeForm" class="concierge-input-row">
+      <label class="sr-only" for="conciergeInput">Votre question</label>
+      <input id="conciergeInput" type="text"
+        placeholder="Posez votre question…" autocomplete="off">
+      <button type="submit" aria-label="Envoyer">↑</button>
+    </form>
+    <p class="concierge-disclaimer">Assistant de démonstration · réponses automatiques</p>
+  </section>
+
+  <script>
+    // Année du pied de page
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+
+    // Menu mobile
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    mainNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mainNav.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    // Apparition de la navigation au défilement
+    const header = document.getElementById("header");
+    window.addEventListener("scroll", () => {
+      header.classList.toggle("scrolled", window.scrollY > 40);
+    }, { passive: true });
+
+    // Menu gastronomique interactif
+    const dishes = {
+      entrees: [
+        {
+          name: "Burrata des Pouilles",
+          description: "Tomates anciennes, basilic frais, huile d'olive.",
+          price: 19
+        },
+        {
+          name: "Carpaccio de daurade",
+          description: "Agrumes, fenouil croquant, fleur de sel.",
+          price: 23
+        },
+        {
+          name: "Velouté de petits pois",
+          description: "Menthe fraîche, crème légère, croûtons dorés.",
+          price: 17
+        },
+        {
+          name: "Tartare de tomates",
+          description: "Olives noires, câpres, herbes du jardin.",
+          price: 18
+        }
+      ],
+      plats: [
+        {
+          name: "Filet de loup rôti",
+          description: "Légumes de saison, beurre blanc citronné.",
+          price: 36
+        },
+        {
+          name: "Risotto au citron",
+          description: "Riz crémeux, parmesan affiné, herbes fraîches.",
+          price: 29
+        },
+        {
+          name: "Suprême de volaille fermière",
+          description: "Jus réduit, pommes grenailles, thym.",
+          price: 32
+        },
+        {
+          name: "Légumes du marché",
+          description: "Légumes rôtis, céréales et sauce aux herbes.",
+          price: 27
+        }
+      ],
+      desserts: [
+        {
+          name: "Tarte fine aux agrumes",
+          description: "Crème légère à la vanille, zestes confits.",
+          price: 14
+        },
+        {
+          name: "Mousse au chocolat noir",
+          description: "Chocolat intense, éclats de noisettes.",
+          price: 15
+        },
+        {
+          name: "Pavlova aux fruits rouges",
+          description: "Meringue, crème légère, fruits de saison.",
+          price: 16
+        },
+        {
+          name: "Assiette de fromages",
+          description: "Sélection de fromages, confiture de figues.",
+          price: 17
+        }
+      ],
+      boissons: [
+        {
+          name: "Citronnade maison",
+          description: "Citron frais, menthe, eau pétillante.",
+          price: 9
+        },
+        {
+          name: "Mocktail Jardin Bleu",
+          description: "Agrumes, romarin, sirop floral.",
+          price: 13
+        },
+        {
+          name: "Eaux minérales",
+          description: "Eau plate ou pétillante.",
+          price: 7
+        },
+        {
+          name: "Café ou infusion",
+          description: "Sélection de cafés et infusions.",
+          price: 6
+        }
+      ]
+    };
+
+    const menuList = document.getElementById("menuList");
+    const menuTabs = document.querySelectorAll(".menu-tab");
+
+    function renderMenu(category) {
+      menuList.replaceChildren();
+
+      dishes[category].forEach(dish => {
+        const item = document.createElement("article");
+        item.className = "menu-item";
+
+        const details = document.createElement("div");
+        details.className = "menu-item-details";
+
+        const title = document.createElement("h3");
+        title.textContent = dish.name;
+
+        const description = document.createElement("p");
+        description.textContent = dish.description;
+
+        const price = document.createElement("span");
+        price.className = "menu-price";
+        price.textContent = dish.price.toLocaleString("fr-FR") + " €";
+
+        details.append(title, description);
+        item.append(details, price);
+        menuList.appendChild(item);
+      });
+    }
+
+    menuTabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        menuTabs.forEach(button => {
+          button.classList.remove("active");
+          button.setAttribute("aria-pressed", "false");
+        });
+
+        tab.classList.add("active");
+        tab.setAttribute("aria-pressed", "true");
+        renderMenu(tab.dataset.category);
+      });
+    });
+
+    renderMenu("entrees");
+
+    // Réservation de démonstration
+    const bookingDate = document.getElementById("bookingDate");
+    const bookingForm = document.getElementById("tableBookingForm");
+    const bookingMessage = document.getElementById("bookingMessage");
+
+    function localDateString(date) {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+      const day = String(date.getDate()).padStart(2, "0");
+      return `${year}-${month}-${day}`;
+    }
+
+    bookingDate.min = localDateString(new Date());
+
+    bookingForm.addEventListener("submit", event => {
+      event.preventDefault();
+
+      if (!bookingForm.reportValidity()) return;
+
+      const date = new Date(bookingDate.value + "T12:00:00");
+      const formattedDate = date.toLocaleDateString("fr-FR", {
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+      });
+
+      const time = document.getElementById("bookingTime").value;
+      const guests = document.getElementById("bookingGuests").value;
+
+      bookingMessage.replaceChildren();
+      const title = document.createElement("strong");
+      title.textContent = "Votre demande de démonstration est prête.";
+
+      const details = document.createElement("p");
+      details.textContent =
+        `${formattedDate} à ${time} · ${guests} convive(s).`;
+
+      const notice = document.createElement("p");
+      notice.textContent =
+        "Aucune réservation réelle n'a été effectuée.";
+
+      bookingMessage.append(title, details, notice);
+      bookingMessage.hidden = false;
+      bookingMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+
+    // Concierge virtuel : réponses automatiques
+    const conciergeLauncher = document.getElementById("conciergeLauncher");
+    const conciergePanel = document.getElementById("conciergePanel");
+    const conciergeClose = document.getElementById("conciergeClose");
+    const conciergeMessages = document.getElementById("conciergeMessages");
+    const conciergeForm = document.getElementById("conciergeForm");
+    const conciergeInput = document.getElementById("conciergeInput");
+
+    function openConcierge() {
+      conciergePanel.hidden = false;
+      conciergeLauncher.setAttribute("aria-expanded", "true");
+      conciergeInput.focus();
+    }
+
+    function closeConcierge() {
+      conciergePanel.hidden = true;
+      conciergeLauncher.setAttribute("aria-expanded", "false");
+      conciergeLauncher.focus();
+    }
+
+    conciergeLauncher.addEventListener("click", () => {
+      if (conciergePanel.hidden) openConcierge();
+      else closeConcierge();
+    });
+
+    conciergeClose.addEventListener("click", closeConcierge);
+
+    function addMessage(text, sender) {
+      const message = document.createElement("p");
+      message.className = "concierge-bubble " + sender;
+      message.textContent = text;
+      conciergeMessages.appendChild(message);
+      conciergeMessages.scrollTop = conciergeMessages.scrollHeight;
+    }
+
+    function getConciergeAnswer(question) {
+      const q = question.toLocaleLowerCase("fr");
+
+      if (q.includes("horaire") || q.includes("ouvre") ||
+          q.includes("ouvert") || q.includes("heure")) {
+        return "Le déjeuner est prévu de 12 h à 14 h et le dîner de 19 h à 21 h 30, du mardi au dimanche. Ces horaires sont fictifs.";
+      }
+
+      if (q.includes("prix") || q.includes("tarif") ||
+          q.includes("coût") || q.includes("carte") ||
+          q.includes("menu")) {
+        return "Les entrées commencent à 17 €, les plats à 27 € et les desserts à 14 € dans notre menu fictif. Consultez la carte sur cette page.";
+      }
+
+      if (q.includes("réserv") || q.includes("table")) {
+        return "Vous pouvez préparer une réservation de démonstration dans la section « Votre table vous attend ». Aucune réservation réelle n'est enregistrée.";
+      }
+
+      if (q.includes("où") || q.includes("adresse") ||
+          q.includes("localis")) {
+        return "L'AZUR est le restaurant fictif de l'hôtel AZURIA, imaginé sur la côte méditerranéenne. Aucune adresse réelle n'est associée à ce projet.";
+      }
+
+      if (q.includes("végét") || q.includes("sans viande")) {
+        return "La carte de démonstration comprend notamment un risotto au citron et des légumes du marché. Pour un vrai restaurant, il faudrait confirmer les ingrédients et allergènes.";
+      }
+
+      if (q.includes("allerg") || q.includes("gluten")) {
+        return "Les allergènes ne sont pas renseignés dans cette maquette. Pour une véritable réservation, il faudrait contacter directement le restaurant.";
+      }
+
+      if (q.includes("bonjour") || q.includes("salut") ||
+          q.includes("bonsoir")) {
+        return "Bonjour et bienvenue chez AZURIA ! Souhaitez-vous consulter les horaires, le menu ou préparer une réservation ?";
+      }
+
+      return "Je peux vous renseigner sur les horaires, les tarifs, le menu ou la réservation de démonstration. Essayez l'une des questions proposées.";
+    }
+
+    function askConcierge(question) {
+      const cleaned = question.trim();
+      if (!cleaned) return;
+
+      addMessage(cleaned, "user");
+      addMessage(getConciergeAnswer(cleaned), "bot");
+    }
+
+    conciergeForm.addEventListener("submit", event => {
+      event.preventDefault();
+      askConcierge(conciergeInput.value);
+      conciergeInput.value = "";
+    });
+
+    document.querySelectorAll(".concierge-questions button").forEach(button => {
+      button.addEventListener("click", () => {
+        askConcierge(button.dataset.question);
+      });
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && !conciergePanel.hidden) {
+        closeConcierge();
+      }
+    });
+  </script>
+</body>
+</html>
+
+
